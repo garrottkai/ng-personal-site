@@ -2,7 +2,7 @@
 
 <body class="sfooter">
 	<div class="sfooter-content">
-		<div>
+		<div class="container">
 			<main>
 				<div>
 
@@ -15,7 +15,7 @@
 
 	</div><!-- sfooter content -->
 
-	<!-- footer here, or maybe not-->
+<?php require_once("php/templates/footer.php");?>
 
 
 </body>
