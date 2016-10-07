@@ -1,0 +1,319 @@
+/* GLOBAL STYLES ------------------------------- */
+
+
+
+/* MISC STYLES --------------------------------- */
+
+/***
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+***/
+
+/*corrects IE min-height bug*/
+
+html { display: flex;}
+body { width: 100%;}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
+
+
+body {
+	background: url(../media/namib-optimize.jpg) no-repeat center center fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*body:after {
+	 background-image: linear-gradient(white, gray);
+ }*/
+
+footer, .sfooter-content {
+width: auto;
+margin: 0 auto 60px;
+}
+
+.topnav-row {
+	width: auto;
+	text-align: center;
+}
+
+
+.topnav-l:link, :visited {
+	color: black;
+}
+
+.topnav-l:hover {
+	color: white;
+}
+
+.topnav {
+text-align: center;
+float: right;
+}
+
+.topnav:hover {
+	background-color: transparent;
+}
+
+.topnav > li {
+	margin: 5rem 1rem 0;
+}
+
+.topnav > a {
+box-sizing: border-box;
+border-radius: 2px;
+background-color: transparent;
+font-family: 'Fjord One', serif;
+font-size: 2rem;
+font-weight: 400;
+color: black;
+margin: 5rem 1rem 0;
+width: 95%;
+
+
+}
+
+.topnav > a:hover {
+	background-color: transparent;
+	border: 1px solid black;
+	border-radius: 3px;
+	text-decoration: underline;
+	-webkit-text-decoration-style: solid;
+}
+
+.topnav > a:visited {
+	background-color: transparent;
+	color: black;
+}
+
+@media(max-width: 991px) {
+	.topnav {
+		text-align: center;
+
+	}
+	.topnav > a {
+		margin-top: 1rem;
+	}
+}
+
+@media(min-width: 992px) {
+	.topnav {
+		/*float: right;*/
+	}
+}
+
+.navbar > .navbar-inner > .nav > li > a:hover {
+	background-color: transparent;
+}
+
+.topnav-l {
+font-family: 'Fjord One', serif;
+font-size: 4rem;
+text-align: center;
+padding: 2% 5%;
+margin: 2rem auto 0;
+
+}
+
+/*header > .row > .navbar {
+	margin-bottom: 0;
+}*/
+
+.topnavline {
+	margin: 0 0 2rem 0;
+	width: auto;
+	border-color: black;
+}
+
+h2 {
+	font-family: 'Fjord One', serif;
+	text-align: center;
+}
+
+.txt {
+	font-family: 'Oxygen', sans-serif;
+}
+
+h5 {
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+
+a > h5 {
+	color: black;
+	text-decoration: underline;
+}
+
+a > h5:hover {
+	color: white;
+}
+
+.mcontent {
+font-family: 'Fjord One', serif;
+font-size: 2rem;
+text-align: center;
+}
+
+/*.subcontent {
+	margin: auto;
+}*/
+
+.subcontent > .sec {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1.5rem;
+	margin: 2rem 0;
+	min-height: 15rem;
+}
+.subcontent > .sec > h3 {
+	font-family: 'Fjord One', serif;
+}
+
+
+.mcontent > .sec {
+	min-height: 20rem;
+}
+
+.mcontent > .sec > h2 {
+font-size: 1.5em;
+}
+
+.mcontent > .sec > p {
+font-family: 'Oxygen', sans-serif;
+font-size: 1.75rem;
+}
+
+.carousel {
+	margin: auto;
+}
+
+.carousel-inner {
+	height: 40rem;
+	width: 80%;
+	margin: auto;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	height: 40rem;
+	margin: auto;
+}
+
+.alert {
+	width: 80%;
+	margin-bottom: 5rem;
+}
+
+
+label {
+	font-family: 'Fjord One', serif;
+}
+
+form {
+	margin: 0 auto;
+	width: inherit;
+}
+
+
+form > h3 {
+	font-family: 'Fjord One', serif;
+}
+
+.form-group {
+	width: 60%;
+	align-content: center;
+	margin-bottom: 1rem;
+}
+
+
+@media(max-width: 992px) {
+	.form-group {
+		width: 95%;
+	}
+	#rct {
+		width: 20%;
+	}
+	form >  input {
+		width: 400px;
+	}
+}
+
+.btns {
+	margin-top: 1rem;
+}
+
+.btn-success {
+	background-color: cornflowerblue;
+	border-color: white;
+	border-radius: 10px;
+}
+
+.btn-success:hover {
+	background-color: cornflowerblue;
+	border-color: black;
+}
+
+.btn-warning {
+	background-color: #E1C56B;
+	border-color: white;
+	border-radius: 10px;
+	margin-left: 1rem;
+}
+
+.btn-warning:hover {
+	background-color: #E1C56B;
+	border-color: black;
+}
+
+.navbar-fixed-bottom {
+	margin-top: 2rem;
+	border: 2px lightslategray;
+}
+
+footer {
+background-color: transparent;
+font-family: 'Oxygen', sans-serif;
+margin: auto;
+max-height: 6rem;
+
+}
+
+.navline {
+	margin: auto;
+	width: 90%;
+	border-color: black;
+}
+
+/*.footer-l, .footer-c {
+	position: relative;
+	top: 50%;
+	transform: translateY(10%);
+}*/
+
+.footer-i {
+	padding-right: 5rem;
+	margin-bottom: 1rem;
+}
+
+.footer-i > a > img {
+	width: 2.5rem;
+	padding-bottom: 1rem;
+}
+
+.bottomnav {
+	/*padding: 2rem;*/
+	text-align: center;
+}
+
+/* MAIN PAGE LAYOUT STYLES --------------------- */
+
+
+/* SUBPAGE LAYOUT STYLES ----------------------- */
