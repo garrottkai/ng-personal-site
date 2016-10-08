@@ -47,13 +47,13 @@
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap-tpls.min.js"></script-->
 
 		<!--Angular app files -->
-		<script src="angular/app.js"></script>
-		<script src="angular/route-config.js"></script>
+		<script src="../../angular/app.js"></script>
+		<script src="../../angular/route-config.js"></script>
 		<!--script src="angular/directives/bootstrap-breakpoint.js"></script-->
-		<script src="angular/controllers/home-controller.js"></script>
-		<script src="angular/controllers/portfolio-controller.js"></script>
-		<script src="angular/controllers/about-controller.js"></script>
-		<script src="angular/controllers/contact-controller.js"></script>
+		<script src="../../angular/controllers/home-controller.js"></script>
+		<script src="../../angular/controllers/portfolio-controller.js"></script>
+		<script src="../../angular/controllers/about-controller.js"></script>
+		<script src="../../angular/controllers/contact-controller.js"></script>
 
 		<title>Kai Garrott, Developer</title>
 	</head>
