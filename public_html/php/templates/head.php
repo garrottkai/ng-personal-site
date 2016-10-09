@@ -29,7 +29,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
 
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
@@ -40,20 +40,21 @@
 		<?php $ANGULAR_VERSION = "1.5.8";?>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION;?>/angular.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION;?>/angular-route.js"></script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION;?>/angular-messages.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/<?php echo $ANGULAR_VERSION;?>/angular-animate.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/<?php echo $ANGULAR_VERSION;?>/angular-touch.min.js"
+<!--		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/--><?php //echo $ANGULAR_VERSION;?><!--/angular-messages.min.js"></script>-->
+<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/--><?php //echo $ANGULAR_VERSION;?><!--/angular-animate.min.js"></script>-->
+<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/--><?php //echo $ANGULAR_VERSION;?><!--/angular-touch.min.js"-->
 		<!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap-tpls.min.js"></script-->
 
 		<!--Angular app files -->
-		<script src="../../angular/app.js"></script>
-		<script src="../../angular/route-config.js"></script>
-		<!--script src="angular/directives/bootstrap-breakpoint.js"></script-->
-		<script src="../../angular/controllers/home-controller.js"></script>
-		<script src="../../angular/controllers/portfolio-controller.js"></script>
-		<script src="../../angular/controllers/about-controller.js"></script>
-		<script src="../../angular/controllers/contact-controller.js"></script>
+		<script src="angular/app.js"></script>
+		<script src="angular/route-config.js"></script>
+		<script src="angular/directives/bootstrap-breakpoint.js"></script>
+		<script src="angular/controllers/header-controller.js"></script>
+		<script src="angular/controllers/home-controller.js"></script>
+		<script src="angular/controllers/portfolio-controller.js"></script>
+		<script src="angular/controllers/about-controller.js"></script>
+		<script src="angular/controllers/contact-controller.js"></script>
 
 		<title>Kai Garrott, Developer</title>
 	</head>

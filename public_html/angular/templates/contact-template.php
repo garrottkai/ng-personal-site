@@ -1,4 +1,4 @@
-// template for Contact view
+<!--template for Contact view-->
 <?php require_once("header-template.php");?>
 <div>
 

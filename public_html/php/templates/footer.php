@@ -1,4 +1,4 @@
-// static footer to be injected
+<!--static footer to be injected-->
 <footer class="navbar navbar-fixed-bottom">
 	<hr class="navline">
 	<ul class="nav navbar-nav">

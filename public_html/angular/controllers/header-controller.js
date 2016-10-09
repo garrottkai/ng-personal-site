@@ -1,5 +1,5 @@
 // controller for header
-app.controller("headerController", ["$http", "$scope", function($http, $scope) {
+app.controller("headerController", ["$scope", function($scope) {
 
 	// collapse navbar on xs screen
 	$scope.$watch("breakpoint", function() {

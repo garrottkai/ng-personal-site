@@ -1,3 +1,4 @@
+<!-- template for header -->
 <header ng-controller="headerController">
 	<bootstrap-breakpoint></bootstrap-breakpoint>
 	<div class="row topnav-row">

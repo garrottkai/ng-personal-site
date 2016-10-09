@@ -1,4 +1,4 @@
-// template for Home view
+<!--template for Home view-->
 <?php require_once("header-template.php");?>
 <div class="row mcontent">
 	<div class="col-xs-12 sec">
