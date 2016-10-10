@@ -56,5 +56,5 @@
 		<script src="angular/controllers/about-controller.js"></script>
 		<script src="angular/controllers/contact-controller.js"></script>
 
-		<title>Kai Garrott, Developer</title>
+		<title ng-bind="title"></title>
 	</head>
