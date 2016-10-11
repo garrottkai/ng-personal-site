@@ -1,7 +1,7 @@
 <!-----------Place to build ng-driven contact form------------>
 
 <?php require_once("header-template.php"); ?>
-<div>
+<div class="col-xs-12 col-md-10 col-md-offset-1">
 
 	<!--Begin Contact Form-->
 	<form name="contactForm" id="contactForm" ng-submit="submit(formData, contactForm.$valid);" novalidate>
@@ -11,7 +11,7 @@
 				<div class="input-group-addon">
 					<i class="fa fa-user" aria-hidden="true"></i>
 				</div>
-				<input type="text" class="form-control" id="senderName" name="senderName" ng-minlength="4" ng-maxlength="64"
+				<input type="text" class="form-control input-field" id="senderName" name="senderName" ng-minlength="4" ng-maxlength="64"
 						 ng-model="formData.senderName" ng-required="true" placeholder="Name">
 			</div>
 			<div class="alert alert-danger" role="alert" ng-messages="contactForm.senderName.$error"
@@ -27,7 +27,7 @@
 				<div class="input-group-addon">
 					<i class="fa fa-envelope" aria-hidden="true"></i>
 				</div>
-				<input type="email" class="form-control" id="senderEmail" name="senderEmail" ng-minlength="8"
+				<input type="email" class="form-control input-field" id="senderEmail" name="senderEmail" ng-minlength="8"
 						 ng-maxlength="128" ng-model="formData.senderEmail" ng-required="true" placeholder="Email">
 			</div>
 			<div class="alert alert-danger" role="alert" ng-messages="contactForm.senderEmail.$error"
@@ -42,7 +42,7 @@
 				<div class="input-group-addon">
 					<i class="fa fa-pencil" aria-hidden="true"></i>
 				</div>
-				<input type="text" class="form-control" id="subject" name="subject" ng-model="formData.subject"
+				<input type="text" class="form-control input-field" id="subject" name="subject" ng-model="formData.subject"
 						 ng-required="false" placeholder="Subject">
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 				<div class="input-group-addon">
 					<i class="fa fa-comment" aria-hidden="true"></i>
 				</div>
-				<textarea class="form-control" rows="5" id="message" name="message" ng-maxlength="2000"
+				<textarea class="form-control input-field" rows="5" id="message" name="message" ng-maxlength="2000"
 							 ng-model="formData.message" ng-required="true"
 							 placeholder="Message (2000 characters max)"></textarea>
 				<div class="alert alert-danger" role="alert" ng-messages="contactForm.message.$error"

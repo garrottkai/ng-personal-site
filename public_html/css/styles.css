@@ -1,7 +1,5 @@
 /* GLOBAL STYLES ------------------------------- */
 
-
-
 /* MISC STYLES --------------------------------- */
 
 /***
@@ -11,8 +9,13 @@
 
 /*corrects IE min-height bug*/
 
-html { display: flex;}
-body { width: 100%;}
+html {
+	display: flex;
+}
+
+body {
+	width: 100%;
+}
 
 .sfooter {
 	display: flex;
@@ -24,13 +27,13 @@ body { width: 100%;}
 	flex: 1 0 auto;
 }
 
-
 body {
-	background: url(../media/namib-optimize.jpg) no-repeat center center fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../media/namib-optimize.jpg) no-repeat center center fixed;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
+
 }
 
 /*body:after {
@@ -38,8 +41,8 @@ body {
  }*/
 
 footer, .sfooter-content {
-width: auto;
-margin: 0 auto 60px;
+	width: auto;
+	margin: 0 auto 60px;
 }
 
 .topnav-row {
@@ -47,18 +50,17 @@ margin: 0 auto 60px;
 	text-align: center;
 }
 
-
 .topnav-l:link, :visited {
-	color: black;
+	color: whitesmoke;
 }
 
 .topnav-l:hover {
-	color: white;
+	color: lightskyblue;
 }
 
 .topnav {
-text-align: center;
-float: right;
+	text-align: center;
+	float: right;
 }
 
 .topnav:hover {
@@ -70,22 +72,21 @@ float: right;
 }
 
 .topnav > a {
-box-sizing: border-box;
-border-radius: 2px;
-background-color: transparent;
-font-family: 'Fjord One', serif;
-font-size: 2rem;
-font-weight: 400;
-color: black;
-margin: 5rem 1rem 0;
-width: 95%;
-
+	box-sizing: border-box;
+	border-radius: 2px;
+	background-color: transparent;
+	font-family: 'Fjord One', serif;
+	font-size: 2rem;
+	font-weight: 400;
+	color: whitesmoke;
+	margin: 5rem 1rem 0;
+	width: 95%;
 
 }
 
 .topnav > a:hover {
 	background-color: transparent;
-	border: 1px solid black;
+	border: 1px solid whitesmoke;
 	border-radius: 3px;
 	text-decoration: underline;
 	-webkit-text-decoration-style: solid;
@@ -93,20 +94,21 @@ width: 95%;
 
 .topnav > a:visited {
 	background-color: transparent;
-	color: black;
+	color: whitesmoke;
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
 	.topnav {
 		text-align: center;
 
 	}
+
 	.topnav > a {
 		margin-top: 1rem;
 	}
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
 	.topnav {
 		/*float: right;*/
 	}
@@ -117,11 +119,11 @@ width: 95%;
 }
 
 .topnav-l {
-font-family: 'Fjord One', serif;
-font-size: 4rem;
-text-align: center;
-padding: 2% 5%;
-margin: 2rem auto 0;
+	font-family: 'Fjord One', serif;
+	font-size: 4rem;
+	text-align: center;
+	padding: 2% 5%;
+	margin: 2rem auto 0;
 
 }
 
@@ -132,36 +134,40 @@ margin: 2rem auto 0;
 .topnavline {
 	margin: 0 0 2rem 0;
 	width: auto;
-	border-color: black;
+	border-color: whitesmoke;
 }
 
 h2 {
 	font-family: 'Fjord One', serif;
 	text-align: center;
+	color: whitesmoke;
 }
 
 .txt {
 	font-family: 'Oxygen', sans-serif;
+	color: whitesmoke;
 }
 
 h5 {
 	font-family: 'Oxygen', sans-serif;
 	text-align: center;
+	color: whitesmoke;
 }
 
 a > h5 {
-	color: black;
+	color: whitesmoke;
 	text-decoration: underline;
 }
 
 a > h5:hover {
-	color: white;
+	color: lightskyblue;
 }
 
 .mcontent {
-font-family: 'Fjord One', serif;
-font-size: 2rem;
-text-align: center;
+	font-family: 'Fjord One', serif;
+	font-size: 2rem;
+	text-align: center;
+	color: whitesmoke;
 }
 
 /*.subcontent {
@@ -173,23 +179,26 @@ text-align: center;
 	font-size: 1.5rem;
 	margin: 2rem 0;
 	min-height: 15rem;
-}
-.subcontent > .sec > h3 {
-	font-family: 'Fjord One', serif;
+	color: whitesmoke;
 }
 
+.subcontent > .sec > h3 {
+	font-family: 'Fjord One', serif;
+	color: whitesmoke;
+}
 
 .mcontent > .sec {
 	min-height: 20rem;
 }
 
 .mcontent > .sec > h2 {
-font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .mcontent > .sec > p {
-font-family: 'Oxygen', sans-serif;
-font-size: 1.75rem;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1.75rem;
+
 }
 
 .carousel {
@@ -212,7 +221,6 @@ font-size: 1.75rem;
 	margin-bottom: 5rem;
 }
 
-
 label {
 	font-family: 'Fjord One', serif;
 }
@@ -222,26 +230,30 @@ form {
 	width: inherit;
 }
 
-
 form > h3 {
 	font-family: 'Fjord One', serif;
 }
 
 .form-group {
-	width: 60%;
+	/*width: 60%;*/
 	align-content: center;
 	margin-bottom: 1rem;
 }
 
+.input-field {
+	background: whitesmoke;
+}
 
-@media(max-width: 992px) {
-	.form-group {
-		width: 95%;
-	}
+@media (max-width: 992px) {
+	/*.form-group {*/
+		/*width: 95%;*/
+	/*}*/
+
 	#rct {
 		width: 20%;
 	}
-	form >  input {
+
+	form > input {
 		width: 400px;
 	}
 }
@@ -252,7 +264,7 @@ form > h3 {
 
 .btn-success {
 	background-color: cornflowerblue;
-	border-color: white;
+	border-color: whitesmoke;
 	border-radius: 10px;
 }
 
@@ -263,7 +275,7 @@ form > h3 {
 
 .btn-warning {
 	background-color: #E1C56B;
-	border-color: white;
+	border-color: whitesmoke;
 	border-radius: 10px;
 	margin-left: 1rem;
 }
@@ -279,17 +291,19 @@ form > h3 {
 }
 
 footer {
-background-color: transparent;
-font-family: 'Oxygen', sans-serif;
-margin: auto;
-max-height: 6rem;
+	background-color: transparent;
+	font-family: 'Oxygen', sans-serif;
+	margin: auto;
+	max-height: 6rem;
+	color: whitesmoke;
+	text-align: center;
 
 }
 
 .navline {
 	margin: auto;
 	width: 90%;
-	border-color: black;
+	border-color: whitesmoke;
 }
 
 /*.footer-l, .footer-c {
@@ -299,8 +313,9 @@ max-height: 6rem;
 }*/
 
 .footer-i {
-	padding-right: 5rem;
+	/*padding-right: 5rem;*/
 	margin-bottom: 1rem;
+	color: whitesmoke;
 }
 
 .footer-i > a > img {
@@ -311,9 +326,9 @@ max-height: 6rem;
 .bottomnav {
 	/*padding: 2rem;*/
 	text-align: center;
+	color: whitesmoke;
 }
 
 /* MAIN PAGE LAYOUT STYLES --------------------- */
-
 
 /* SUBPAGE LAYOUT STYLES ----------------------- */

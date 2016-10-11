@@ -8,10 +8,11 @@
 		<!-- sets viewport width to device width, scaling 1:1 -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<base href="<?php echo dirname($_SERVER["PHP_SELF"]) . "/";?>"/>
+		<base href="<?php echo dirname($_SERVER["PHP_SELF"]) . "/"; ?>"/>
 
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+				integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 		<!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,8 @@
 
 		<!-- FontAwesome minified -------------->
 
-		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+				rel="stylesheet"/>
 
 		<!-- Google fonts ---------------------->
 		<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
@@ -32,17 +34,25 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"
+				  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+				  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+				  crossorigin="anonymous"></script>
 
 		<!--AngularJS libraries-->
-		<?php $ANGULAR_VERSION = "1.5.8";?>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION;?>/angular.min.js"></script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION;?>/angular-route.js"></script>
-<!--		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/--><?php //echo $ANGULAR_VERSION;?><!--/angular-messages.min.js"></script>-->
-<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/--><?php //echo $ANGULAR_VERSION;?><!--/angular-animate.min.js"></script>-->
-<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/--><?php //echo $ANGULAR_VERSION;?><!--/angular-touch.min.js"-->
+		<?php $ANGULAR_VERSION = "1.5.8"; ?>
+		<script type="text/javascript"
+				  src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular.min.js"></script>
+		<script type="text/javascript"
+				  src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-route.js"></script>
+		<script type="text/javascript"
+				  src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-messages.min.js"></script>
+		<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/-->
+		<?php //echo $ANGULAR_VERSION;?><!--/angular-animate.min.js"></script>-->
+		<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/-->
+		<?php //echo $ANGULAR_VERSION;?><!--/angular-touch.min.js"-->
 		<!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap-tpls.min.js"></script-->
 
