@@ -8,7 +8,7 @@
 		<div class="form-group">
 			<div class="input-group"
 				  ng-class="{ 'has-error': contactForm.senderName.$touched && contactForm.senderName.$invalid }">
-				<div class="input-group-addon">
+				<div class="input-group-addon input-label">
 					<i class="fa fa-user" aria-hidden="true"></i>
 				</div>
 				<input type="text" class="form-control input-field" id="senderName" name="senderName" ng-minlength="4" ng-maxlength="64"
@@ -24,7 +24,7 @@
 		<div class="form-group">
 			<div class="input-group"
 				  ng-class="{ 'has-error': contactForm.senderEmail.$touched && contactForm.senderEmail.$invalid }">
-				<div class="input-group-addon">
+				<div class="input-group-addon input-label">
 					<i class="fa fa-envelope" aria-hidden="true"></i>
 				</div>
 				<input type="email" class="form-control input-field" id="senderEmail" name="senderEmail" ng-minlength="8"
@@ -39,7 +39,7 @@
 		</div>
 		<div class="form-group">
 			<div class="input-group">
-				<div class="input-group-addon">
+				<div class="input-group-addon input-label">
 					<i class="fa fa-pencil" aria-hidden="true"></i>
 				</div>
 				<input type="text" class="form-control input-field" id="subject" name="subject" ng-model="formData.subject"
@@ -49,7 +49,7 @@
 		<div class="form-group">
 			<div class="input-group"
 				  ng-class="{ 'has-error': contactForm.message.$touched && contactForm.message.$invalid }">
-				<div class="input-group-addon">
+				<div class="input-group-addon input-label">
 					<i class="fa fa-comment" aria-hidden="true"></i>
 				</div>
 				<textarea class="form-control input-field" rows="5" id="message" name="message" ng-maxlength="2000"
@@ -78,19 +78,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- jQuery Form, Additional Methods, Validate -->
-
-<script type="text/javascript"
-		  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-<script type="text/javascript"
-		  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-<script type="text/javascript"
-		  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
-
-<!-- JavaScript Form Validator -->
-
-<script src="../../js/form-validate.js"></script>
 
 <!-- Google reCAPTCHA -->
 <script src='https://www.google.com/recaptcha/api.js'></script>

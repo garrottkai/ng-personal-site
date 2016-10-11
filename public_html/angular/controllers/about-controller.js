@@ -1,5 +1,5 @@
 // controller for About view
-app.controller("homeController", ["$scope", function($scope) {
+app.controller("aboutController", ["$scope", function($scope) {
 
 
 }]);

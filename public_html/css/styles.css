@@ -244,6 +244,10 @@ form > h3 {
 	background: whitesmoke;
 }
 
+.input-label {
+	background: whitesmoke;
+}
+
 @media (max-width: 992px) {
 	/*.form-group {*/
 		/*width: 95%;*/
