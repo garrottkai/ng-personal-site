@@ -1,5 +1,5 @@
 .DS_Store
 .idea
 /vendor
-/public_html/php/mailer/rc-key.php
+**/rc-key.php
 
