@@ -24,3 +24,5 @@ $publicKey = "timeForANewKey";
  * @var $secretKey
  **/
 $secretKey = "whyDoesntThisGitignoreWork";
+
+// Testing
