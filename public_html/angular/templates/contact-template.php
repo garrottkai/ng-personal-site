@@ -4,7 +4,7 @@
 <div class="col-xs-12 col-md-10 col-md-offset-1">
 
 	<!--Begin Contact Form-->
-	<form name="contactForm" id="contactForm" ng-submit="submit(formData, contactForm.$valid);" novalidate>
+	<form name="contactForm" id="contactForm" novalidate>
 		<div class="form-group">
 			<div class="input-group"
 				  ng-class="{ 'has-error': contactForm.senderName.$touched && contactForm.senderName.$invalid }">
@@ -66,7 +66,7 @@
 		<!-- reCAPTCHA -->
 		<div class="g-recaptcha" id="rct" data-sitekey="6LdOqCETAAAAABB-pUlY6mNg14XxKD0qOukq-AfT"></div>
 		<div class="btns">
-			<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+			<button class="btn btn-success" type="submit" ng-click="sendMail()"><i class="fa fa-paper-plane"></i> Send</button>
 			<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 		</div>
 	</form>
