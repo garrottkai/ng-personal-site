@@ -17,10 +17,10 @@ $MAIL_RECIPIENTS = ["kai@kaigarrott.com" => "Kai Garrott"];
  * variable to house public key
  * @var $publicKey
  */
-$publicKey = "6LeFIgkUAAAAAPMq2yVG8THLJ5kmJe9SxNrYYlh0";
+$publicKey = "timeForANewKey";
 
 /**
  * variable to house secret key
  * @var $secretKey
  **/
-$secretKey = "6LeFIgkUAAAAAGyN6ZIm9jcwuVJKKPwavM-XKrg3";
+$secretKey = "whyDoesntThisGitignoreWork";
