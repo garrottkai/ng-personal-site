@@ -17,10 +17,10 @@ $MAIL_RECIPIENTS = ["kai@kaigarrott.com" => "Kai Garrott"];
  * variable to house public key
  * @var $publicKey
  */
-$publicKey = "6LdOqCETAAAAABB-pUlY6mNg14XxKD0qOukq-AfT";
+$publicKey = "6LeEIgkUAAAAAItyDC8HxwYl2TBlbmSk6Xsn4XTV";
 
 /**
  * variable to house secret key
  * @var $secretKey
  **/
-$secretKey = "6LdOqCETAAAAAK6ce7y1YzCKcxidEvG1OHwkrDRt";
+$secretKey = "6LeEIgkUAAAAAJ8ZuTBmUHzgrj6SYe1-Dp3gTF8u";
