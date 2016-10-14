@@ -124,6 +124,11 @@ footer, .sfooter-content {
 
 }
 
+.topnav-logo {
+	width: 250px;
+	margin-top: 2rem;
+}
+
 /*header > .row > .navbar {
 	margin-bottom: 0;
 }*/
@@ -238,11 +243,11 @@ form > h3 {
 }
 
 .input-field {
-	background: whitesmoke;
+	background: white;
 }
 
 .input-label {
-	background: whitesmoke;
+	background: white;
 }
 
 @media (max-width: 992px) {
@@ -284,6 +289,10 @@ form > h3 {
 .btn-warning:hover {
 	background-color: #E1C56B;
 	border-color: whitesmoke;
+}
+
+.g-recaptcha {
+	background: white;
 }
 
 .navbar-fixed-bottom {

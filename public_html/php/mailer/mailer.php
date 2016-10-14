@@ -3,7 +3,7 @@
  * require all composer dependencies; requiring the autoload file loads all composer packages at once
  **/
 require_once((dirname(__DIR__, 2)) . "/vendor/autoload.php");
-require_once("rc-key.php");
+require_once("/var/www/rc-key.php");
 
 
 // verify user's reCAPTCHA input
