@@ -64,7 +64,7 @@
 		</div>
 
 		<!-- reCAPTCHA -->
-		<div class="g-recaptcha" id="rct" data-sitekey="6LeFIgkUAAAAAPMq2yVG8THLJ5kmJe9SxNrYYlh0"></div>
+		<div class="g-recaptcha" id="rct" data-sitekey="6LdyPAkUAAAAAFkqWlHuXA0lffTZIWFm0a8oUvTW"></div>
 		<div class="btns">
 			<button class="btn btn-success" type="submit" ng-click="sendMail()"><i class="fa fa-paper-plane"></i> Send</button>
 			<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>

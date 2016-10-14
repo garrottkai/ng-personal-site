@@ -2,11 +2,11 @@
 <header ng-controller="headerController">
 	<bootstrap-breakpoint></bootstrap-breakpoint>
 	<div class="row topnav-row">
-		<div class="navbar">
+		<div class="navbar" id="nav-main">
 			<div class="navbar-inner">
 
 				<a href="home">
-					<img class="col-md-4 topnav-logo" src="media/kg-icon-placeholder.png" />
+					<img class="col-md-4" id="topnav-logo" src="media/kg-icon-placeholder.png" />
 <!--					<div class="col-xs-12 col-md-4 topnav-l">Kai Garrott</div>-->
 				</a>
 				<ul class="nav">

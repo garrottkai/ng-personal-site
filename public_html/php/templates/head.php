@@ -66,5 +66,24 @@
 		<script src="angular/controllers/about-controller.js"></script>
 		<script src="angular/controllers/contact-controller.js"></script>
 
+		<!-- Navbar scroll effect -->
+		<script type="text/javascript">
+			$(".sfooter").scroll( function() {
+				var value = $(this).scrollTop();
+				if ( value > 120 ) {
+					$("#topnav-logo").css({
+						"width": "100px",
+						"float": "left"
+					});
+					$("#nav-main").addClass("navbar-fixed-top");
+				}
+				else
+					$("#topnav-logo").css({
+						"width"			: "250px",
+						"margin-top"	: "2rem"
+					});
+			});
+		</script>
+
 		<title ng-bind="title"></title>
 	</head>
