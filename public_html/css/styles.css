@@ -27,17 +27,17 @@ body {
 	flex: 1 0 auto;
 }
 
-body {
-	background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../media/namib-optimize.jpg) no-repeat center center fixed;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-webkit-background-size: cover;
-	background-size: cover;
+/*body {*/
+	/*background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../media/namib-optimize.jpg) no-repeat center center fixed;*/
+	/*-moz-background-size: cover;*/
+	/*-o-background-size: cover;*/
+	/*-webkit-background-size: cover;*/
+	/*background-size: cover;*/
 
-}
+/*}*/
 
 /*body:after {
-	 background-image: linear-gradient(white, gray);
+	 background-image: linear-gradient(white, gray);ß
  }*/
 
 footer, .sfooter-content {
@@ -51,11 +51,11 @@ footer, .sfooter-content {
 }
 
 .topnav-l:link, :visited {
-	color: whitesmoke;
+	color: black;
 }
 
 .topnav-l:hover {
-	color: lightskyblue;
+	color: #E1C56B;
 }
 
 .topnav {
@@ -78,7 +78,7 @@ footer, .sfooter-content {
 	font-family: 'Fjord One', serif;
 	font-size: 2rem;
 	font-weight: 400;
-	color: whitesmoke;
+	color: black;
 	margin: 5rem 1rem 0;
 	width: 95%;
 
@@ -86,15 +86,12 @@ footer, .sfooter-content {
 
 .topnav > a:hover {
 	background-color: transparent;
-	border: 1px solid whitesmoke;
-	border-radius: 3px;
-	text-decoration: underline;
-	-webkit-text-decoration-style: solid;
+	border-bottom: 1px solid black;
 }
 
 .topnav > a:visited {
 	background-color: transparent;
-	color: whitesmoke;
+	color: black;
 }
 
 @media (max-width: 991px) {
@@ -134,40 +131,40 @@ footer, .sfooter-content {
 .topnavline {
 	margin: 0 0 2rem 0;
 	width: auto;
-	border-color: whitesmoke;
+	border-color: black;
 }
 
 h2 {
 	font-family: 'Fjord One', serif;
 	text-align: center;
-	color: whitesmoke;
+	color: black;
 }
 
 .txt {
 	font-family: 'Oxygen', sans-serif;
-	color: whitesmoke;
+	color: black;
 }
 
 h5 {
 	font-family: 'Oxygen', sans-serif;
 	text-align: center;
-	color: whitesmoke;
+	color: black;
 }
 
 a > h5 {
-	color: whitesmoke;
+	color: black;
 	text-decoration: underline;
 }
 
 a > h5:hover {
-	color: lightskyblue;
+	color: gray;
 }
 
 .mcontent {
 	font-family: 'Fjord One', serif;
 	font-size: 2rem;
 	text-align: center;
-	color: whitesmoke;
+	color: black;
 }
 
 /*.subcontent {
@@ -179,12 +176,12 @@ a > h5:hover {
 	font-size: 1.5rem;
 	margin: 2rem 0;
 	min-height: 15rem;
-	color: whitesmoke;
+	color: black;
 }
 
 .subcontent > .sec > h3 {
 	font-family: 'Fjord One', serif;
-	color: whitesmoke;
+	color: black;
 }
 
 .mcontent > .sec {
@@ -268,38 +265,39 @@ form > h3 {
 
 .btn-success {
 	background-color: cornflowerblue;
-	border-color: whitesmoke;
+	border-color: black;
 	border-radius: 10px;
 }
 
 .btn-success:hover {
 	background-color: cornflowerblue;
-	border-color: black;
+	border-color: whitesmoke;
 }
 
 .btn-warning {
 	background-color: #E1C56B;
-	border-color: whitesmoke;
+	border-color: black;
 	border-radius: 10px;
 	margin-left: 1rem;
 }
 
 .btn-warning:hover {
 	background-color: #E1C56B;
-	border-color: black;
+	border-color: whitesmoke;
 }
 
 .navbar-fixed-bottom {
 	margin-top: 2rem;
-	border: 2px lightslategray;
+	border: 2px black;
+	text-align: center;
 }
 
 footer {
-	background-color: transparent;
+	background-color: #ffffff;
 	font-family: 'Oxygen', sans-serif;
 	margin: auto;
 	max-height: 6rem;
-	color: whitesmoke;
+	color: black;
 	text-align: center;
 
 }
@@ -307,7 +305,7 @@ footer {
 .navline {
 	margin: auto;
 	width: 90%;
-	border-color: whitesmoke;
+	border-color: black;
 }
 
 /*.footer-l, .footer-c {
@@ -319,7 +317,7 @@ footer {
 .footer-i {
 	/*padding-right: 5rem;*/
 	margin-bottom: 1rem;
-	color: whitesmoke;
+	color: black;
 }
 
 .footer-i > a > img {
@@ -327,11 +325,15 @@ footer {
 	padding-bottom: 1rem;
 }
 
-.bottomnav {
+.nav-item {
 	/*padding: 2rem;*/
 	text-align: center;
-	color: whitesmoke;
+	color: black;
 }
+
+/*.navbar-text {*/
+	/*text-align: center;*/
+/*}*/
 
 /* MAIN PAGE LAYOUT STYLES --------------------- */
 
