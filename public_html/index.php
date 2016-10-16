@@ -4,7 +4,7 @@
 	<div class="sfooter-content">
 		<div class="container">
 			<main>
-				<div>
+				<div id="scroll-box">
 
 					<!-- do yer thang, angular -->
 					<div ng-view></div>
