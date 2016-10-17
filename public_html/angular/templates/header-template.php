@@ -6,7 +6,7 @@
 			<div class="navbar-inner">
 
 				<a href="home">
-					<img class="col-md-4" id="topnav-logo" src="media/kg-icon-placeholder.png" />
+					<img class="col-md-4" id="topnav-logo" ng-class="{'logoCenter' : angular.app.controller = 'homeController' && ('#scroll-box').scrollTop() <= 50 , 'logoLeft' : angular.app.controller != 'homeController' || ('#scroll-box').scrollTop() > 50 }" src="media/kg-icon-placeholder.png" />
 <!--					<div class="col-xs-12 col-md-4 topnav-l">Kai Garrott</div>-->
 				</a>
 				<ul class="nav">

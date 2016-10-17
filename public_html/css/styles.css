@@ -124,6 +124,15 @@ footer, .sfooter-content {
 
 }
 
+.logoLeft {
+	width: 100px;
+	float: left;
+}
+
+.logoCenter {
+	width: 300px;
+}
+
 /*#topnav-logo {*/
 	/*width: 250px;*/
 	/*margin-top: 2rem;*/
