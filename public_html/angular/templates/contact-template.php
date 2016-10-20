@@ -1,7 +1,7 @@
 <!-----------Place to build ng-driven contact form------------>
 
 <?php require_once("header-template.php"); ?>
-<div class="col-xs-12 col-md-10 col-md-offset-1">
+<div class="col-xs-12 col-md-10 col-md-offset-1" ng-controller="contactController">
 
 	<!--Begin Contact Form-->
 	<form name="contactForm" id="contactForm" novalidate>
@@ -66,8 +66,8 @@
 		<!-- reCAPTCHA -->
 		<div class="g-recaptcha" id="rct" data-sitekey="6LdyPAkUAAAAAFkqWlHuXA0lffTZIWFm0a8oUvTW"></div>
 		<div class="btns">
-			<button class="btn btn-success" type="submit" ng-click="sendMail()"><i class="fa fa-paper-plane"></i> Send</button>
-			<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+			<button class="btn btn-success" type="submit" id="submit" ng-click="sendMail()" ng-disabled="contactForm.$invalid"><i class="fa fa-paper-plane"></i> Send</button>
+			<button class="btn btn-warning" type="reset" id="reset"><i class="fa fa-ban"></i> Reset</button>
 		</div>
 	</form>
 
