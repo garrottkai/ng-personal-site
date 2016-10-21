@@ -3,7 +3,7 @@
  * require all composer dependencies; requiring the autoload file loads all composer packages at once
  **/
 require_once((dirname(__DIR__, 2)) . "/vendor/autoload.php");
-require_once((dirname(__DIR__, 2)) . "../rc-key.php");
+require_once("/var/www/rc-key.php");
 
 
 // verify user's reCAPTCHA input
@@ -18,11 +18,11 @@ try {
 	}
 
 	// sanitize the inputs from the form: name, email, subject, and message
-	// this assumes jQuery (not Angular will be submitting the form, so we're using the $_POST superglobal
-	$name = filter_input(INPUT_POST, "senderName", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$email = filter_input(INPUT_POST, "senderEmail", FILTER_SANITIZE_EMAIL);
-	$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$input = json_decode(file_get_contents('php://input'));
+	$name = filter_var($input->senderName, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$email = filter_var($input->senderEmail, FILTER_SANITIZE_EMAIL);
+	$subject = filter_var($input->subject, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$message = filter_var($input->message, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
 	// create Swift message
 	$swiftMessage = Swift_Message::newInstance();
