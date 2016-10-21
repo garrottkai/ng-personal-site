@@ -8,17 +8,8 @@ app.controller("contactController", ["$scope", "$http", function($scope, $http) 
 			url: 'php/mailer/mailer.php',
 			data: $scope.formData,
 			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-		})
-			.success(
-				function() {
-					console.log("i think it worked")
-				}
-			)
-			.error(
-				function() {
-					console.log("failure everywhere")
-				}
-			)
+		});
+		console.log($scope.formData);
 	};
 
 }]);

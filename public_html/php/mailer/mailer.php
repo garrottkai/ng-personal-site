@@ -2,34 +2,33 @@
 /**
  * require all composer dependencies; requiring the autoload file loads all composer packages at once
  **/
-require_once((dirname(__DIR__, 2)) . "/vendor/autoload.php");
-require_once("/var/www/rc-key.php");
+require_once("../../../vendor/autoload.php");
+require_once("../../../../rc-key.php");
 
 
-// verify user's reCAPTCHA input
-$recaptcha = new \ReCaptcha\ReCaptcha($secretKey);
-$resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
+//// verify user's reCAPTCHA input
+//$recaptcha = new \ReCaptcha\ReCaptcha($secretKey);
+//$resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
 
 try {
 
 	// if reCAPTCHA error, output the error code to the user
-	if (!$resp->isSuccess()) {
-		throw(new Exception("reCAPTCHA error!"));
-	}
-
+//	if (!$resp->isSuccess()) {
+//		throw(new Exception("reCAPTCHA error!"));
+//	}
 	// sanitize the inputs from the form: name, email, subject, and message
 	$input = json_decode(file_get_contents('php://input'));
-	$name = filter_var($input->senderName, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$email = filter_var($input->senderEmail, FILTER_SANITIZE_EMAIL);
-	$subject = filter_var($input->subject, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$message = filter_var($input->message, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$name = filter_var($input['senderName'], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$email = filter_var($input['senderEmail'], FILTER_SANITIZE_EMAIL);
+	$subject = filter_var($input['subject'], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$message = filter_var($input['message'], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
 	// create Swift message
 	$swiftMessage = Swift_Message::newInstance();
 
 	// attach the sender to the message
 	// this takes the form of an associative array where the Email is the key for the real name
-	$swiftMessage->setFrom([$email => $name]);
+	$swiftMessage->setFrom($name);
 
 	/**
 	 * attach the recipients to the message
@@ -56,7 +55,7 @@ try {
 	 * send the Email via SMTP; the SMTP server here is configured to relay everything upstream via CNM
 	 * this default may or may not be available on all web hosts; consult their documentation/support for details
 	 * SwiftMailer supports many different transport methods; SMTP was chosen because it's the most compatible and has the best error handling
-	 * @see http://swiftmailer.org/docs/sending.html Sending Messages - Documentation - SwitftMailer
+	 * @see http://swiftmailer.org/docs/sending.html Sending Messages - Documentation - SwiftMailer
 	 **/
 	$smtp = Swift_SmtpTransport::newInstance("localhost", 25);
 	$mailer = Swift_Mailer::newInstance($smtp);
@@ -75,5 +74,6 @@ try {
 	echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
 
 } catch(Exception $exception) {
+	var_dump($MAIL_RECIPIENTS);
 	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
 }
