@@ -8,9 +8,12 @@ app.controller("headerController", ["$scope", "$location", function($scope, $loc
 
 	$scope.where = function($location) {
 		$scope.loc = $location.url();
-		console.log($scope.loc)
+		console.log($scope.loc);
+		return $scope.loc;
 	};
 	$scope.where($location);
+
+
 
 
 	$scope.breakpoint = null;
