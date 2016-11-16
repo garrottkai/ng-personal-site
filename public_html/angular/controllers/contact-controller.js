@@ -7,7 +7,7 @@ app.controller("contactController", ["$scope", "$http", function($scope, $http) 
 			method: 'POST',
 			url: 'php/mailer/mailer.php',
 			data: $scope.formData,
-			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			headers: {'Content-Type': 'application/json'}
 		});
 		console.log($scope.formData);
 	};
