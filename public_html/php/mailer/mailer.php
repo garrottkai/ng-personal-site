@@ -18,6 +18,7 @@ if(('php://input') != null) {
 //	}
 		// sanitize the inputs from the form: name, email, subject, and message
 		$input = json_decode(file_get_contents('php://input'));
+	var_dump($input);
 		$name = trim($input['senderName']);
 		$name = filter_var($name, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 		$email = trim($input['senderEmail']);
@@ -32,7 +33,8 @@ if(('php://input') != null) {
 
 		// attach the sender to the message
 		// this takes the form of an associative array where the Email is the key for the real name
-		$swiftMessage->setFrom($name);
+		$senderInfo = [$email => $name];
+		$swiftMessage->setFrom($senderInfo);
 
 		/**
 		 * attach the recipients to the message
