@@ -60,7 +60,7 @@ footer, .sfooter-content {
 
 .topnav {
 	text-align: center;
-	float: right;
+	top: .5rem;
 }
 
 .topnav:hover {
@@ -94,20 +94,10 @@ footer, .sfooter-content {
 	color: black;
 }
 
-@media (max-width: 991px) {
-	.topnav {
-		text-align: center;
-
-	}
-
-	.topnav > a {
-		margin-top: 1rem;
-	}
-}
-
 @media (min-width: 992px) {
 	.topnav {
-		/*float: right;*/
+		float: right;
+		top: 1rem;
 	}
 }
 
@@ -124,19 +114,21 @@ footer, .sfooter-content {
 
 }
 
-.logoLeft {
+/*.logoLeft {
 	width: 100px;
 	float: left;
-}
+}*/
 
-.logoCenter {
+/*.logoCenter {
 	width: 300px;
-}
+}*/
 
-/*#topnav-logo {*/
-	/*width: 250px;*/
+#topnav-logo {
+	height: 5rem;
+	float: left;
+	/*top: 1.5rem;*/
 	/*margin-top: 2rem;*/
-/*}*/
+}
 
 /*header > .row > .navbar {
 	margin-bottom: 0;
@@ -257,6 +249,11 @@ form > h3 {
 
 .input-label {
 	background: white;
+}
+
+.title-link {
+	font-size: 2rem;
+	padding-top: 2rem;
 }
 
 @media (max-width: 992px) {

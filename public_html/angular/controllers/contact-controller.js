@@ -10,6 +10,5 @@ app.controller("contactController", ["$scope", "$http", function($scope, $http) 
 			headers: {'Content-Type': 'application/json'}
 		});
 		console.log($scope.formData);
-	};
-
+	}.success(console.log('what'))
 }]);

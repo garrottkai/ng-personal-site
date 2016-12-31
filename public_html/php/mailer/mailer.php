@@ -11,13 +11,13 @@ require_once("../../../../rc-key.php");
 //$resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
 
 try {
-if(('php://input') != null) {
 		// if reCAPTCHA error, output the error code to the user
 //	if (!$resp->isSuccess()) {
 //		throw(new Exception("reCAPTCHA error!"));
 //	}
 		// sanitize the inputs from the form: name, email, subject, and message
 		$input = json_decode(file_get_contents('php://input'));
+	if(($input) != null) {
 	var_dump($input);
 		$name = trim($input['senderName']);
 		$name = filter_var($name, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
@@ -35,6 +35,7 @@ if(('php://input') != null) {
 		// this takes the form of an associative array where the Email is the key for the real name
 		$senderInfo = [$email => $name];
 		$swiftMessage->setFrom($senderInfo);
+	var_dump($senderInfo);
 
 		/**
 		 * attach the recipients to the message
