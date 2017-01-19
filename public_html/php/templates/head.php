@@ -27,7 +27,6 @@
 				rel="stylesheet"/>
 
 		<!-- Google fonts ---------------------->
-		<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
 		<!-- Custom CSS -->
