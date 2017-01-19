@@ -28,14 +28,6 @@ footer, .sfooter-content {
 	margin: 0 auto 60px;
 }
 
-.topnav-l:link, :visited {
-	color: black;
-}
-
-.topnav-l:hover {
-	color: #E1C56B;
-}
-
 .topnav {
 	text-align: center;
 	top: .5rem;
@@ -83,15 +75,6 @@ footer, .sfooter-content {
 	background-color: transparent;
 }
 
-.topnav-l {
-	font-family: 'Fjord One', serif;
-	font-size: 4rem;
-	text-align: center;
-	padding: 2% 5%;
-	margin: 2rem auto 0;
-
-}
-
 /*.logoLeft {
 	width: 100px;
 	float: left;
@@ -102,8 +85,8 @@ footer, .sfooter-content {
 }*/
 
 #topnav-logo {
-	/*height: 5rem;*/
 	float: left;
+	height: 5rem;
 }
 
 .topnavline {
