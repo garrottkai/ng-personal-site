@@ -1,7 +1,7 @@
 <!-- template for header -->
 <header ng-controller="headerController">
 	<bootstrap-breakpoint></bootstrap-breakpoint>
-	<div class="row topnav-row">
+	<div class="row">
 		<div class="navbar" id="nav-main">
 			<div class="navbar-inner">
 
