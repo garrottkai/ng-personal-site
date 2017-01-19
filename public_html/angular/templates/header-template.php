@@ -6,7 +6,9 @@
 			<div class="navbar-inner">
 
 				<a href="home">
-					<img class="col-md-4" id="topnav-logo" src="media/kg-icon-placeholder.png"/><!--attr for angular soon ng-class="$scope.where == '/' ? 'logoLeft' : 'logoCenter'"-->
+					<div  class="col-xs-4">
+					<img id="topnav-logo" src="media/kg-icon-placeholder.png"/><!--attr for angular soon ng-class="$scope.where == '/' ? 'logoLeft' : 'logoCenter'"-->
+				</div>
 				</a>
 				<ul class="nav">
 					<!--<li class="col-xs-4 col-md-2 topnav"><a href="contact">Contact</a></li>-->

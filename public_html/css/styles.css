@@ -35,7 +35,6 @@ footer, .sfooter-content {
 }
 .topnav {
 	text-align: center;
-	top: .5rem;
 }
 
 .topnav:hover {
@@ -91,7 +90,7 @@ footer, .sfooter-content {
 
 #topnav-logo {
 	float: left;
-	height: 5rem;
+	height: 8rem;
 }
 
 .topnavline {
