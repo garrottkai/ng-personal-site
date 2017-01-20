@@ -33,6 +33,15 @@ footer, .sfooter-content {
 	font-family: 'Sansation';
 	src: url(../media/sansation.ttf);
 }
+
+/*header {
+	position: fixed;
+}*/
+
+#nav-main {
+	position: fixed;
+}
+
 .topnav {
 	text-align: center;
 }
@@ -89,7 +98,6 @@ footer, .sfooter-content {
 }*/
 
 #topnav-logo {
-	float: left;
 	height: 8rem;
 }
 

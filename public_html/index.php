@@ -6,14 +6,13 @@
 			<main>
 				<div id="scroll-box">
 
-					<!-- do yer thang, angular -->
 					<div ng-view></div>
 
 				</div>
 			</main>
 		</div>
 
-	</div><!-- sfooter content -->
+	</div>
 
 <?php require_once("php/templates/footer.php");?>
 

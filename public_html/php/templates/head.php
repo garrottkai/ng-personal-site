@@ -51,12 +51,6 @@
 				  src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-route.js"></script>
 		<script type="text/javascript"
 				  src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-messages.min.js"></script>
-		<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/-->
-		<?php //echo $ANGULAR_VERSION;?><!--/angular-animate.min.js"></script>-->
-		<!--		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/-->
-		<?php //echo $ANGULAR_VERSION;?><!--/angular-touch.min.js"-->
-		<!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap-tpls.min.js"></script-->
 
 		<!--Angular app files -->
 		<script src="angular/app.js"></script>
@@ -68,7 +62,8 @@
 		<script src="angular/controllers/about-controller.js"></script>
 		<script src="angular/controllers/contact-controller.js"></script>
 
-
+		<!-- custom js -->
+		<script src="js/scroll.js"></script>
 
 		<title ng-bind="title"></title>
 	</head>
