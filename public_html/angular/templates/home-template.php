@@ -20,4 +20,4 @@
 		<p>Seamless implementation of 2017's sleekest technologies to meet the cutting edge</p>
 	</div>
 </div>
-<script src="../js/scroll.js"></script>
+<script src="js/scroll.js"></script>
