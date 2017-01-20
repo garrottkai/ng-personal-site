@@ -44,6 +44,7 @@ footer, .sfooter-content {
 
 .topnav {
 	text-align: center;
+	float: right;
 }
 
 .topnav:hover {
@@ -77,12 +78,12 @@ footer, .sfooter-content {
 	color: black;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
 	.topnav {
 		float: right;
 		top: 1rem;
 	}
-}
+}*/
 
 .navbar > .navbar-inner > .nav > li > a:hover {
 	background-color: transparent;
