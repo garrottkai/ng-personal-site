@@ -1,4 +1,3 @@
-<!--template for Portfolio view-->
 <?php require_once("header-template.php"); ?>
 <div>
 	<!--<h2>Portfolio</h2>-->

@@ -1,4 +1,3 @@
-<!--template for About view-->
 <?php require_once("header-template.php"); ?>
 <div class="row mcontent">
 	<div class="col-xs-12 sec">
@@ -8,4 +7,4 @@
 		<p>I come from a background of diverse interests and skills and have, at different times, variously familiarized myself with design, technical and promotional writing, systems administration, world history, botany, stained glass, engineering, aviation, and the Oxford comma.</p>
 		<p>Upon occasion, I've been known to jump off a cliff or two</p>
 	</div>
-</div> <!-- /row -->
+</div>

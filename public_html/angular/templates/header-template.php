@@ -1,4 +1,3 @@
-<!-- template for header -->
 <header ng-controller="headerController">
 	<bootstrap-breakpoint></bootstrap-breakpoint>
 	<div class="row">
@@ -7,7 +6,7 @@
 
 				<a href="home">
 					<div  class="col-xs-4">
-					<img id="topnav-logo" src="media/kg-icon-placeholder.png"/><!--attr for angular soon ng-class="$scope.where == '/' ? 'logoLeft' : 'logoCenter'"-->
+					<img id="topnav-logo" src="media/kg-icon-placeholder.png"/>
 				</div>
 				</a>
 				<ul class="nav">

@@ -1,5 +1,3 @@
-<!-----------Place to build ng-driven contact form------------>
-
 <?php require_once("header-template.php"); ?>
 <div class="col-xs-12 col-md-10 col-md-offset-1" ng-controller="contactController">
 
