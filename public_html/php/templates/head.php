@@ -64,7 +64,7 @@
 
 		<!-- custom js -->
 		<script src="js/scroll.js"></script>
-		<link rel="icon" href="media/path4144.png">
+		<link rel="icon" href="media/path41440.png">
 
 		<title ng-bind="title"></title>
 	</head>

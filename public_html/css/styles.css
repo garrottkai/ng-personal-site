@@ -29,7 +29,7 @@ footer, .sfooter-content {
 }
 /*----------------------------*/
 
-@@font-face {
+@font-face {
 	font-family: 'Sansation';
 	src: url(../media/sansation.ttf);
 }
@@ -172,6 +172,12 @@ a > h5:hover {
 
 }
 
+.portfolio-img {
+	width: 100%;
+	padding: .5rem;
+	border: 1px solid black;
+	border-radius: 8px;
+}
 
 .alert {
 	width: 80%;
@@ -208,6 +214,11 @@ form > h3 {
 .title-link {
 	font-size: 2rem;
 	padding-top: 2rem;
+}
+
+.portfolio-title {
+	font-size: 2rem;
+	padding: 4rem 0 2rem;
 }
 
 @media (max-width: 992px) {

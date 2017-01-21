@@ -9,6 +9,12 @@ app.config(function($routeProvider, $locationProvider) {
 			title : 'Kai Garrott | Developer'
 		})
 
+		.when('/home', {
+			controller  : 'homeController',
+			templateUrl : 'angular/templates/home-template.php',
+			title : 'Kai Garrott | Developer'
+		})
+
 		// route for the portfolio page
 		.when('/portfolio', {
 			controller  : 'portfolioController',

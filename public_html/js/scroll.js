@@ -1,17 +1,19 @@
 $(window).scroll(function() {
     var scrollVal = $(document).scrollTop();
     console.log($(document).attr('title'));
-    if (($(document).attr('title') == "Kai Garrott | Developer") && (scrollVal > 50)) {
+    if (($(document).attr('title') == "Kai Garrott | Developer") & (scrollVal < 50)) {
         $("#topnav-logo").css({
-            'height': '8rem',
-            'float' : 'left',
+            'height': '14rem',
+            'text-align' : 'center',
         });
-        $("header").css({
+        $('.navbar-brand').addClass('col-xs-4 col-xs-offset-4');
+      /*  $("header").css({
           'height' : '14rem'
-        });
+        });*/
     } else {
         $("#topnav-logo").css({
-            'height': '12rem'
+            'height': '8rem',
+            'float' : 'left'
         });
     }
 });
