@@ -34,12 +34,16 @@ footer, .sfooter-content {
 	src: url(../media/sansation.ttf);
 }
 
-/*header {
-	position: fixed;
-}*/
+header {
+	background-color: #ffffff;
+}
 
 #nav-main {
 	position: fixed;
+}
+
+.icon-bar {
+	background-color: black;
 }
 
 .topnav {
