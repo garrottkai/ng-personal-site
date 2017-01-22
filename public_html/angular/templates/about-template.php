@@ -1,4 +1,7 @@
 <?php require_once("header-template.php"); ?>
+<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5">
+		<img src="media/portrait.jpg" class="img-responsive about-img">
+</div>
 <div class="row mcontent">
 	<div class="col-xs-12 sec">
 		<h2>Fresh ideas to energize your business</h2>

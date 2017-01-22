@@ -179,6 +179,13 @@ a > h5:hover {
 	border-radius: 8px;
 }
 
+.about-img {
+	width: 100%;
+	padding:.5rem;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
 .alert {
 	width: 80%;
 	margin-bottom: 5rem;
