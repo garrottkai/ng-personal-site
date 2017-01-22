@@ -36,6 +36,12 @@ footer, .sfooter-content {
 
 header {
 	background-color: #ffffff;
+	margin-bottom: 5rem;
+}
+
+.spacer {
+	min-height: 8rem;
+	background-color: #ffffff;
 }
 
 #nav-main {
@@ -46,9 +52,32 @@ header {
 	background-color: black;
 }
 
+.navbar-default {
+	background-color: #ffffff;
+	border: none;
+}
+
+.navbar-default > div > ul > li {
+		margin: 5rem 1rem 0;
+}
+
+.navbar-default > div > ul > li > a {
+		box-sizing: border-box;
+		border-radius: 2px;
+		background-color: transparent;
+		font-family: 'Sansation', serif;
+		font-size: 2rem;
+		font-weight: 400;
+		color: black;
+		margin: 5rem 1rem 0;
+		width: 95%;
+}
+
+.navbar-default > div > ul > li > a: {
+
 .topnav {
 	text-align: center;
-	float: right;
+	position: absolute; top: 0;left: 0;
 }
 
 .topnav:hover {
@@ -60,15 +89,7 @@ header {
 }
 
 .topnav > a {
-	box-sizing: border-box;
-	border-radius: 2px;
-	background-color: transparent;
-	font-family: 'Sansation', serif;
-	font-size: 2rem;
-	font-weight: 400;
-	color: black;
-	margin: 5rem 1rem 0;
-	width: 95%;
+
 
 }
 
