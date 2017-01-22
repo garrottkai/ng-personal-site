@@ -63,7 +63,8 @@
 		<script src="angular/controllers/contact-controller.js"></script>
 
 		<!-- custom js -->
-		<script src="js/scroll.js"></script>
+		<!--<script src="js/scroll.js"></script>-->
+
 		<link rel="icon" href="media/path41440.png">
 
 		<title ng-bind="title"></title>

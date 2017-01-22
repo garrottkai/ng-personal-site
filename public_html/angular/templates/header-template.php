@@ -1,6 +1,6 @@
 <header ng-controller="headerController">
 	<bootstrap-breakpoint></bootstrap-breakpoint>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="navbar-header" id="nav-main">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bts" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
@@ -9,9 +9,9 @@
 				<span class="icon-bar"></span>
 			</button>
 				<a href="home" class="navbar-brand">
-					<div  class="col-xs-4">
+					<!--<div  class="col-xs-4">-->
 					<img id="topnav-logo" src="media/kg-icon-placeholder.png"/>
-				</div>
+				<!--</div>-->
 				</a>
 			</div>
 				<div class="collapse navbar-collapse" id="nav-bts">
@@ -21,11 +21,6 @@
 					<li><a href="portfolio">Portfolio</a></li>
 				</ul>
 			</div>
-
-
-
-						<hr class="topnavline">
+			<hr class="topnavline">
 	</nav> <!-- /row -->
-<div class="spacer">
-</div>
 </header>

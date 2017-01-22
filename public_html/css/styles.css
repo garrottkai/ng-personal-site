@@ -34,19 +34,14 @@ footer, .sfooter-content {
 	src: url(../media/sansation.ttf);
 }
 
-header {
+/*header {
 	background-color: #ffffff;
 	margin-bottom: 5rem;
-}
+}*/
 
-.spacer {
-	min-height: 8rem;
-	background-color: #ffffff;
-}
-
-#nav-main {
+/*#nav-main {
 	position: fixed;
-}
+}*/
 
 .icon-bar {
 	background-color: black;
@@ -73,63 +68,32 @@ header {
 		width: 95%;
 }
 
-.navbar-default > div > ul > li > a: {
-
-.topnav {
-	text-align: center;
-	position: absolute; top: 0;left: 0;
+.navbar-brand {
+	padding-top: .5rem;
 }
 
-.topnav:hover {
-	background-color: transparent;
-}
-
-.topnav > li {
-	margin: 5rem 1rem 0;
-}
-
-.topnav > a {
-
-
-}
-
-.topnav > a:hover {
-	background-color: transparent;
-	border-bottom: 1px solid black;
-}
-
-.topnav > a:visited {
-	background-color: transparent;
-	color: black;
-}
-
-/*@media (min-width: 992px) {
-	.topnav {
-		float: right;
-		top: 1rem;
+@media(max-width:767px) {
+	#topnav-logo {
+		height: 4rem;
 	}
-}*/
-
-.navbar > .navbar-inner > .nav > li > a:hover {
-	background-color: transparent;
 }
 
-/*.logoLeft {
-	width: 100px;
-	float: left;
-}*/
-
-/*.logoCenter {
-	width: 300px;
-}*/
-
-#topnav-logo {
-	height: 8rem;
+@media(min-width:768px) {
+	#topnav-logo {
+		height: 6rem;
+	}
 }
+
+@media(min-width:993px) {
+	#topnav-logo {
+		height: 8rem;
+	}
+}
+
 
 .topnavline {
-	margin: 0 0 2rem 0;
-	width: auto;
+	margin: auto;
+	width: 90%;
 	border-color: black;
 }
 
@@ -151,7 +115,6 @@ h5 {
 }
 
 a > h5 {
-	color: black;
 	text-decoration: underline;
 }
 
@@ -176,7 +139,6 @@ a > h5:hover {
 
 .subcontent > .sec > h3 {
 	font-family: 'Sansation', serif;
-	color: black;
 }
 
 .mcontent > .sec {
