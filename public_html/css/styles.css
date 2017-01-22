@@ -50,6 +50,7 @@ footer, .sfooter-content {
 .navbar-default {
 	background-color: #ffffff;
 	border: none;
+	height: 6rem;
 }
 
 .navbar-default > div > ul > li {
@@ -57,9 +58,6 @@ footer, .sfooter-content {
 }
 
 .navbar-default > div > ul > li > a {
-		box-sizing: border-box;
-		border-radius: 2px;
-		background-color: transparent;
 		font-family: 'Sansation', serif;
 		font-size: 2rem;
 		font-weight: 400;
@@ -72,9 +70,19 @@ footer, .sfooter-content {
 	padding-top: .5rem;
 }
 
+.topnav-heading {
+	font-family: 'Sansation', serif;
+	font-size: 2rem;
+}
+
 @media(max-width:767px) {
 	#topnav-logo {
 		height: 4rem;
+	}
+	.topnav-heading {
+		position: absolute;
+		margin-left: 2rem;
+		margin-top: 1rem;
 	}
 }
 
@@ -90,6 +98,9 @@ footer, .sfooter-content {
 	}
 }
 
+/*#burger {
+	border: none;
+}*/
 
 .topnavline {
 	margin: auto;
@@ -127,6 +138,7 @@ a > h5:hover {
 	font-size: 2rem;
 	text-align: center;
 	color: black;
+	margin-top: 5rem;
 }
 
 .subcontent > .sec {
