@@ -34,10 +34,10 @@ footer, .sfooter-content {
 	src: url(../media/sansation.ttf);
 }
 
-/*header {
-	background-color: #ffffff;
-	margin-bottom: 5rem;
-}*/
+header {
+	/*background-color: #ffffff;
+	margin-bottom: 5rem;*/
+}
 
 /*#nav-main {
 	position: fixed;
@@ -67,7 +67,7 @@ footer, .sfooter-content {
 }
 
 .navbar-default > div > ul > li {
-		margin: 5rem 1rem 0;
+		margin: 1rem 1rem 0;
 }
 
 .navbar-right > li > a {
@@ -75,7 +75,7 @@ footer, .sfooter-content {
 		font-size: 2rem;
 		font-weight: 400;
 		color: black!important;
-		margin: 5rem 1rem 0;
+		margin: 1rem 1rem 0;
 		width: 95%;
 }
 .navbar-brand {
@@ -134,6 +134,10 @@ footer, .sfooter-content {
 	transform: rotateZ(-45deg);
 }
 
+.navbar-collapse {
+max-height: 6rem;
+}
+
 .topnavline {
 	margin: auto;
 	width: 100%;
@@ -173,12 +177,29 @@ a > h5:hover {
 	color: gray;
 }
 
+@media(max-width: 767px) {
+	.mcontent {
+		margin-top: 5rem;
+	}
+}
+
+@media(min-width: 768px) {
+	.mcontent {
+		margin-top: 10rem;
+	}
+}
+
+@media(min-width: 993px) {
+	.mcontent {
+
+	}
+}
+
 .mcontent {
 	font-family: 'Sansation', serif;
 	font-size: 2rem;
 	text-align: center;
 	color: black;
-	margin-top: 5rem;
 }
 
 .subcontent > .sec {

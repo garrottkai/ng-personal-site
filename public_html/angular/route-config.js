@@ -28,14 +28,14 @@ app.config(function($routeProvider, $locationProvider) {
 			templateUrl : 'angular/templates/about-template.php',
 			title : 'About Kai'
 		})
-/*
+
 		// route for the contact page
 		.when('/contact', {
 			controller  : 'contactController',
 			templateUrl : 'angular/templates/contact-template.php',
 			title : 'Contact'
 		})
-*/
+
 		// otherwise redirect to home
 		.otherwise({
 			redirectTo: '/'
