@@ -3,7 +3,6 @@
 	<div class="col-xs-12 sec">
 		<h2>Modern. Effective.</h2>
 		<br>
-		<br>
 		<p class="txt">Your online presence creates critical first impressions of your brand.</p>
 		<p class="txt">Trust your company's image to a full-stack professional.</p>
 	</div>

@@ -34,15 +34,6 @@ footer, .sfooter-content {
 	src: url(../media/sansation.ttf);
 }
 
-header {
-	/*background-color: #ffffff;
-	margin-bottom: 5rem;*/
-}
-
-/*#nav-main {
-	position: fixed;
-}*/
-
 #burger {
 	border: none;
 }
@@ -63,11 +54,10 @@ header {
 .navbar-default {
 	background-color: #ffffff;
 	border: none;
-	height: 6rem;
 }
 
 .navbar-default > div > ul > li {
-		margin: 1rem 1rem 0;
+		margin: 1rem .5rem 0;
 }
 
 .navbar-right > li > a {
@@ -75,7 +65,7 @@ header {
 		font-size: 2rem;
 		font-weight: 400;
 		color: black!important;
-		margin: 1rem 1rem 0;
+		margin: 1rem .5rem 0;
 		width: 95%;
 }
 .navbar-brand {
@@ -83,8 +73,11 @@ header {
 }
 
 .topnav-heading {
+	position: absolute;
+	left: 30%;
 	font-family: 'Sansation', serif;
-	font-size: 2rem;
+	font-size: 3rem;
+
 }
 
 @media(max-width:767px) {
@@ -95,6 +88,10 @@ header {
 		position: absolute;
 		margin-left: 2rem;
 		margin-top: 1rem;
+
+	}
+	.navbar-default {
+			height: 6rem;
 	}
 }
 
@@ -102,21 +99,21 @@ header {
 	#topnav-logo {
 		height: 6rem;
 	}
+	.topnav-heading {
+		top: 2.25rem;
+	}
+	.navbar-default, .navbar-header {
+			height: 10rem;
+	}
 }
 
 @media(min-width:993px) {
 	#topnav-logo {
-		height: 8rem;
+		height: 7rem;
 	}
-}
+	.topnav-heading {
 
-/*#burger {
-	border: none;
-}*/
-
-.topnav-heading {
-	position: absolute;
-	left: 40%;
+	}
 }
 
 .bar-box {
@@ -179,13 +176,13 @@ a > h5:hover {
 
 @media(max-width: 767px) {
 	.mcontent {
-		margin-top: 5rem;
+		margin-top: 7rem;
 	}
 }
 
 @media(min-width: 768px) {
 	.mcontent {
-		margin-top: 10rem;
+		margin-top: 12rem;
 	}
 }
 
@@ -212,6 +209,7 @@ a > h5:hover {
 
 .subcontent > .sec > h3 {
 	font-family: 'Sansation', serif;
+	font-size: 2rem;
 }
 
 .mcontent > .sec {
@@ -219,7 +217,7 @@ a > h5:hover {
 }
 
 .mcontent > .sec > h2 {
-	font-size: 1.5em;
+	font-size: 2.25rem;
 }
 
 .mcontent > .sec > p {
