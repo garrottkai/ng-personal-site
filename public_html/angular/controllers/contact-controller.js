@@ -1,5 +1,5 @@
 // controller for Contact view
-app.controller("contactController", ["$scope", "$http", function($scope, $http) {
+/*app.controller("contactController", ["$scope", "$http", function($scope, $http) {
 
 	$scope.formData = {};
 	$scope.sendMail = function() {
@@ -11,4 +11,4 @@ app.controller("contactController", ["$scope", "$http", function($scope, $http) 
 		});
 		console.log($scope.formData);
 	}.success(console.log('what'))
-}]);
+}]);*/
