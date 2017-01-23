@@ -55,6 +55,11 @@ footer, .sfooter-content {
 	background-color: #1c9fe1!important;
 }
 
+.navbar-fixed-top {
+	width: 90%;
+	margin: auto;
+}
+
 .navbar-default {
 	background-color: #ffffff;
 	border: none;
@@ -65,15 +70,14 @@ footer, .sfooter-content {
 		margin: 5rem 1rem 0;
 }
 
-.navbar-default > div > ul > li > a {
+.navbar-right > li > a {
 		font-family: 'Sansation', serif;
 		font-size: 2rem;
 		font-weight: 400;
-		color: black;
+		color: black!important;
 		margin: 5rem 1rem 0;
 		width: 95%;
 }
-
 .navbar-brand {
 	padding-top: .5rem;
 }
@@ -110,14 +114,34 @@ footer, .sfooter-content {
 	border: none;
 }*/
 
+.topnav-heading {
+	position: absolute;
+	left: 40%;
+}
+
+.bar-box {
+	position: absolute;
+	left: 20%;
+}
+
 #barbar {
+	position: absolute;
+	top: 2rem;
+
 	width: 40px;
 	height: 10px;
 	background-color: #1c9fe1;
 	transform: rotateZ(-45deg);
 }
 
-.topnavline, .navline {
+.topnavline {
+	margin: auto;
+	width: 100%;
+	height: .2rem;
+	background-color: #000000;
+}
+
+.navline {
 	margin: auto;
 	width: 90%;
 	height: .2rem;
