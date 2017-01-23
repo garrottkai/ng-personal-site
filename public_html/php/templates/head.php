@@ -33,15 +33,22 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 
 		<!-- jQuery 2-->
-		<script
+		<!--<script
 	  src="http://code.jquery.com/jquery-2.2.4.min.js"
 	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	  crossorigin="anonymous"></script>
+	  crossorigin="anonymous"></script>-->
+		<script
+	src="https://code.jquery.com/jquery-2.0.0.min.js"
+	integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw="
+	crossorigin="anonymous"></script>
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 				  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 				  crossorigin="anonymous"></script>
+
+		<!-- Google reCAPTCHA -->
+		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!--AngularJS libraries-->
 		<?php $ANGULAR_VERSION = "1.5.8"; ?>

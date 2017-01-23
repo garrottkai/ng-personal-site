@@ -1,7 +1,7 @@
 // controller for Contact view
-/*app.controller("contactController", ["$scope", "$http", function($scope, $http) {
+app.controller("contactController", ["$scope", "$http", function($scope, $http) {
 
-	$scope.formData = {};
+	/*$scope.formData = {};
 	$scope.sendMail = function() {
 		$http({
 			method: 'POST',
@@ -10,5 +10,5 @@
 			headers: {'Content-Type': 'application/json'}
 		});
 		console.log($scope.formData);
-	}.success(console.log('what'))
-}]);*/
+	}.success(console.log('what'))*/
+}]);

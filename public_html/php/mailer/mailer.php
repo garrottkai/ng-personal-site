@@ -7,14 +7,14 @@ require_once("../../../../rc-key.php");
 
 
 //// verify user's reCAPTCHA input
-//$recaptcha = new \ReCaptcha\ReCaptcha($secretKey);
-//$resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
+$recaptcha = new \ReCaptcha\ReCaptcha($secretKey);
+$resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
 
 try {
 		// if reCAPTCHA error, output the error code to the user
-//	if (!$resp->isSuccess()) {
-//		throw(new Exception("reCAPTCHA error!"));
-//	}
+	if (!$resp->isSuccess()) {
+		throw(new Exception("reCAPTCHA error!"));
+	}
 		// sanitize the inputs from the form: name, email, subject, and message
 		$input = json_decode(file_get_contents('php://input'));
 	if(($input) != null) {

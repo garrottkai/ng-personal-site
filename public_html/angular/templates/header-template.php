@@ -16,7 +16,7 @@
 				<!--<div class="bar-box-l">
 					<div id="barbar"></div>
 				</div>-->
-				<div class="topnav-heading">Kai Garrott</div>
+				<div class="topnav-heading"><a href="home">Kai Garrott</a></div>
 				<!--<div class="bar-box-r">
 					<div id="barbar"></div>
 				</div>-->
