@@ -13,13 +13,13 @@
 					<img id="topnav-logo" src="media/kg-icon-placeholder.png"/>
 				<!--</div>-->
 				</a>
-				<div class="bar-box-l">
+				<!--<div class="bar-box-l">
 					<div id="barbar"></div>
-				</div>
+				</div>-->
 				<div class="topnav-heading">Kai Garrott</div>
-				<div class="bar-box-r">
+				<!--<div class="bar-box-r">
 					<div id="barbar"></div>
-				</div>
+				</div>-->
 			</div>
 				<div class="collapse navbar-collapse" id="nav-bts">
 				<ul class="nav navbar-nav navbar-right">

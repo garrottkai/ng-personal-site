@@ -116,7 +116,7 @@ footer, .sfooter-content {
 	}
 	.topnav-heading {
 		top: 2.25rem;
-		left: 10%;
+		left: 5%;
 	}
 	.navbar-default, .navbar-header {
 			height: 10rem;
@@ -127,7 +127,7 @@ footer, .sfooter-content {
 	}
 }
 
-@media(min-width:993px) {
+@media(min-width:992px) {
 	#topnav-logo {
 		height: 7rem;
 	}
@@ -160,6 +160,10 @@ footer, .sfooter-content {
 
 .navbar-collapse {
 max-height: 6rem;
+}
+
+#nav-bts {
+	background-color: #ffffff;
 }
 
 .topnavline {
@@ -213,7 +217,7 @@ a > h5:hover {
 	}
 }
 
-@media(min-width: 993px) {
+@media(min-width: 992px) {
 	.mcontent {
 
 	}
@@ -260,8 +264,13 @@ a > h5:hover {
 	border-radius: 8px;
 }
 
+.about-img-box {
+	margin: auto;
+}
+
 .about-img {
 	width: 100%;
+	margin: auto;
 	padding:.5rem;
 	border: 1px solid black;
 	border-radius: 8px;
@@ -309,7 +318,31 @@ form > h3 {
 	padding: 4rem 0 2rem;
 }
 
-@media (max-width: 992px) {
+@media(max-width:767px) {
+	#contact-form {
+		margin-top: 10rem;
+	}
+	.about-img-box {
+		width: 15rem;
+	}
+}
+
+@media(min-width:768px) {
+	#contact-form {
+		margin-top: 14rem;
+	}
+	.about-img-box {
+		width: 19rem;
+	}
+}
+
+@media(min-width:992px) {
+	.about-img-box {
+		width: 22rem;
+	}
+}
+
+@media (max-width: 991px) {
 	#rct {
 		width: 20%;
 	}
