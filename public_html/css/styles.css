@@ -286,6 +286,14 @@ footer {
 	border-color: black;
 }
 
+.bottomnav {
+	margin-top: 1rem;
+}
+
+.footer-l {
+	text-align: center;
+}
+
 .footer-i {
 	margin-bottom: 1rem;
 	color: black;
