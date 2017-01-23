@@ -1,9 +1,8 @@
-/***
-* Flexbox Sticky Footer
-* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-***/
+/* ---------- Flexbox Sticky Footer ---------
+http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 
-/*corrects IE min-height bug*/
+corrects IE min-height bug
+*/
 
 html {
 	display: flex;
@@ -27,15 +26,18 @@ footer, .sfooter-content {
 	width: auto;
 	margin: 0 auto 60px;
 }
-/*----------------------------*/
 
+/* ------------ Fonts ----------------- */
 @font-face {
 	font-family: 'Sansation';
 	src: url(../media/sansation.ttf);
 }
 
+/* ------------ Header ----------------- */
+
 #burger {
 	border: none;
+	padding-right: none;
 }
 
 #burger, #burger:active, #burger:hover, #burger:visited {
@@ -180,6 +182,8 @@ max-height: 6rem;
 	background-color: #000000;
 }
 
+/* ------------ Global ----------------- */
+
 h2 {
 	font-family: 'Sansation', serif;
 	text-align: center;
@@ -238,7 +242,7 @@ a > h5:hover {
 	color: black;
 }
 
-.subcontent > .sec > h3 {
+.subcontent > .sec > h3, {
 	font-family: 'Sansation', serif;
 	font-size: 2rem;
 }
@@ -247,7 +251,7 @@ a > h5:hover {
 	min-height: 20rem;
 }
 
-.mcontent > .sec > h2 {
+.mcontent > .sec > h2, .mcontent > h2 {
 	font-size: 2.25rem;
 }
 
@@ -257,12 +261,20 @@ a > h5:hover {
 
 }
 
+/* ------------ Portfolio ----------------- */
+
+.portfolio-item {
+	margin-top: 1rem;
+}
+
 .portfolio-img {
 	width: 100%;
 	padding: .5rem;
 	border: 1px solid black;
 	border-radius: 8px;
 }
+
+/* ------------ About ----------------- */
 
 .about-img-box {
 	margin: auto;
@@ -274,6 +286,13 @@ a > h5:hover {
 	padding:.5rem;
 	border: 1px solid black;
 	border-radius: 8px;
+}
+
+/* ------------ Contact Form ----------------- */
+
+.form-container {
+	width: 90%;
+	margin: auto;
 }
 
 .alert {
@@ -310,12 +329,7 @@ form > h3 {
 
 .title-link {
 	font-size: 2rem;
-	padding-top: 2rem;
-}
-
-.portfolio-title {
-	font-size: 2rem;
-	padding: 4rem 0 2rem;
+	margin-top: 4rem;
 }
 
 @media(max-width:767px) {
@@ -337,18 +351,11 @@ form > h3 {
 }
 
 @media(min-width:992px) {
+	#contact-form {
+		width: 75%;
+	}
 	.about-img-box {
 		width: 22rem;
-	}
-}
-
-@media (max-width: 991px) {
-	#rct {
-		width: 20%;
-	}
-
-	form > input {
-		width: 400px;
 	}
 }
 
@@ -383,6 +390,8 @@ form > h3 {
 	background: white;
 }
 
+/* ------------ Footer ----------------- */
+
 .navbar-fixed-bottom {
 	margin-top: 2rem;
 	border: 2px black;
@@ -403,21 +412,38 @@ footer {
 	margin-top: 1rem;
 }
 
-.footer-copy {
-	text-align: center;
+.footer-c {
+	width:15rem;
+	margin: auto;
 }
 
-.footer-i {
+@media(min-width: 768px) {
+	.bottomnav {
+		margin-top: 2rem;
+	}
+}
+
+.footer-copy, .footer-l {
+	text-align: center;
+		bottom: .5rem;
+}
+
+.footer-r {
 	margin-bottom: 1rem;
 	color: black;
 }
 
-.footer-i > a > img {
+.social-bts {
+	position: absolute;
+	right: 6%;
+	bottom: 0rem;
+}
+
+.footer-r > a > img {
 	width: 2.5rem;
 	padding-bottom: 1rem;
 }
 
-.nav-item {
-	text-align: center;
-	color: black;
+#social-bt-r {
+	padding-left: 1rem;
 }

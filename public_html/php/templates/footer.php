@@ -1,19 +1,19 @@
 <footer class="navbar navbar-fixed-bottom">
 	<hr class="navline">
 	<div class="row bottomnav">
-	<div class="col-xs-6 col-xs-offset-3">
+	<div class="footer-c">
 		<ul class="nav navbar-nav footer-copy">
-			<li class="nav-item footer-l">&copy 2017 Kai Garrott</li>
+			<li class="footer-l">&copy 2017 Kai Garrott</li>
 		</ul>
 	</div>
-	<div class="col-xs-3 nav navbar-nav">
-		<span class="footer-i">
+	<div class="social-bts">
+		<span class="footer-r">
 			<a href="https://github.com/garrottkai" target="_blank">
 				<img src="media/GitHub-Mark-64px.png">
 			</a>
 		</span>
-		<span class="footer-i">
-			<a href="https://linkedin.com/in/kai-garrott" target="_blank">
+		<span class="footer-r">
+			<a href="https://linkedin.com/in/kai-garrott" target="_blank" id="social-bt-r">
 				<img src="media/In-Black-66px-R.png">
 			</a>
 		</span>
