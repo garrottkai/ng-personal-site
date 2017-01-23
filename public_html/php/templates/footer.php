@@ -2,7 +2,7 @@
 	<hr class="navline">
 	<div class="row bottomnav">
 	<div class="col-xs-6 col-xs-offset-3">
-		<ul class="nav navbar-nav">
+		<ul class="nav navbar-nav footer-copy">
 			<li class="nav-item footer-l">&copy 2017 Kai Garrott</li>
 		</ul>
 	</div>

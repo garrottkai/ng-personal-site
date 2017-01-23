@@ -43,8 +43,16 @@ footer, .sfooter-content {
 	position: fixed;
 }*/
 
+#burger {
+	border: none;
+}
+
+#burger, #burger:active, #burger:hover, #burger:visited {
+	background-color: #ffffff;
+}
+
 .icon-bar {
-	background-color: black;
+	background-color: #1c9fe1!important;
 }
 
 .navbar-default {
@@ -102,10 +110,18 @@ footer, .sfooter-content {
 	border: none;
 }*/
 
-.topnavline {
+#barbar {
+	width: 40px;
+	height: 10px;
+	background-color: #1c9fe1;
+	transform: rotateZ(-45deg);
+}
+
+.topnavline, .navline {
 	margin: auto;
 	width: 90%;
-	border-color: black;
+	height: .2rem;
+	background-color: #000000;
 }
 
 h2 {
@@ -280,17 +296,11 @@ footer {
 
 }
 
-.navline {
-	margin: auto;
-	width: 90%;
-	border-color: black;
-}
-
 .bottomnav {
 	margin-top: 1rem;
 }
 
-.footer-l {
+.footer-copy {
 	text-align: center;
 }
 

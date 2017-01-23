@@ -13,6 +13,7 @@
 					<img id="topnav-logo" src="media/kg-icon-placeholder.png"/>
 				<!--</div>-->
 				</a>
+				<div id="barbar"></div>
 				<span class="topnav-heading">Kai Garrott</span>
 			</div>
 				<div class="collapse navbar-collapse" id="nav-bts">
