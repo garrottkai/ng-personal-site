@@ -3,6 +3,7 @@
       <!--Begin Contact Form-->
       <div class="form-container">
 <form id="contact-form" action="php/mailer/mailer.php" method="post">
+          <h2 id="contact-heading">Contact Kai</h2>
   <div class="form-group">
     <div class="input-group">
       <div class="input-group-addon">
@@ -62,3 +63,6 @@
   <!-- JavaScript Form Validator -->
 
   <script src="js/form-validate.js" async defer></script>
+
+  <!-- Google reCAPTCHA -->
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>

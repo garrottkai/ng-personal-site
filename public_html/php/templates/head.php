@@ -47,8 +47,8 @@
 				  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 				  crossorigin="anonymous"></script>
 
-		<!-- Google reCAPTCHA -->
-		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
+			<!-- Google reCAPTCHA -->
+		<!--<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>-->
 
 		<!--AngularJS libraries-->
 		<?php $ANGULAR_VERSION = "1.5.8"; ?>
