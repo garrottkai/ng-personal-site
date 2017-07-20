@@ -16,7 +16,7 @@ try {
 		throw(new Exception("reCAPTCHA error!"));
 	}
 		// sanitize the inputs from the form: name, email, subject, and message
-	$input = json_decode(/*file_get_contents('php://input')*/trim($_POST));
+	$input = json_decode(file_get_contents('php://input'));
 	if($input !== null) {
 		$name = trim($input['senderName']);
 		$name = filter_var($name, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
@@ -72,12 +72,12 @@ try {
 		 **/
 		if($numSent !== count($recipients)) {
 			// the $failedRecipients parameter passed in the send() method now contains contains an array of the Emails that failed
-			throw(new RuntimeException("unable to send email"));
+			throw(new RuntimeException("Unable to send email"));
 		}
 
 		// report a successful send
 		echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
-	} else {echo print_r(file_get_contents('php://input'));
+	} else {
 		throw(new Exception());
 	}
 } catch(Exception $exception) {
