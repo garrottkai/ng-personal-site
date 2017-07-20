@@ -8,7 +8,7 @@
 		<!-- sets viewport width to device width, scaling 1:1 -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<base href="<?php echo dirname($_SERVER["PHP_SELF"]) . "/"; ?>"/>
+		<base href="<?php echo realpath('../../..'); ?>"/>
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
