@@ -9,7 +9,7 @@
       <div class="input-group-addon">
         <i class="fa fa-user" aria-hidden="true"></i>
       </div>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+      <input type="text" class="form-control" id="senderName" name="senderName" placeholder="Name">
     </div>
   </div>
   <div class="form-group">
@@ -17,7 +17,7 @@
       <div class="input-group-addon">
         <i class="fa fa-envelope" aria-hidden="true"></i>
       </div>
-      <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+      <input type="email" class="form-control" id="senderEmail" name="senderEmail" placeholder="Email">
     </div>
   </div>
   <div class="form-group">
@@ -65,4 +65,4 @@
   <script src="js/form-validate.js" async defer></script>
 
   <!-- Google reCAPTCHA -->
-<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--script type="text/javascript" src="https://www.google.com/recaptcha/api.js" ></script-->

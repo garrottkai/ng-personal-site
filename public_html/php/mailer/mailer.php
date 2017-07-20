@@ -2,8 +2,8 @@
 /**
  * require all composer dependencies; requiring the autoload file loads all composer packages at once
  **/
-require_once("../../../vendor/autoload.php");
-require_once("../../../../rc-key.php");
+require_once("../../vendor/autoload.php");
+require_once("../../../rc-key.php");
 
 
 //// verify user's reCAPTCHA input
@@ -16,9 +16,8 @@ try {
 		throw(new Exception("reCAPTCHA error!"));
 	}
 		// sanitize the inputs from the form: name, email, subject, and message
-		$input = json_decode(file_get_contents('php://input'));
-	if(($input) != null) {
-	var_dump($input);
+	$input = json_decode(/*file_get_contents('php://input')*/trim($_POST));
+	if($input !== null) {
 		$name = trim($input['senderName']);
 		$name = filter_var($name, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 		$email = trim($input['senderEmail']);
@@ -35,7 +34,6 @@ try {
 		// this takes the form of an associative array where the Email is the key for the real name
 		$senderInfo = [$email => $name];
 		$swiftMessage->setFrom($senderInfo);
-	var_dump($senderInfo);
 
 		/**
 		 * attach the recipients to the message
@@ -79,7 +77,7 @@ try {
 
 		// report a successful send
 		echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
-	} else {
+	} else {echo print_r(file_get_contents('php://input'));
 		throw(new Exception());
 	}
 } catch(Exception $exception) {

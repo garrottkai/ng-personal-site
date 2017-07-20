@@ -16,6 +16,7 @@
 
 <?php require_once("php/templates/footer.php");?>
 
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>
